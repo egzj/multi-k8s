@@ -20,6 +20,6 @@ script:
   - docker run -e CI=true egcircleslife/react-test npm test
 deploy:
   provider: script
-  script: ./deploy.sh
+  script: bash ./deploy.sh
   on: 
     branch: master
